@@ -1,7 +1,6 @@
 __=$(which stow)
 
 if ! [ "$?" = "0" ]; then
-
   OS_TYPE=$(
     OS_INFO=""
 
@@ -16,8 +15,20 @@ if ! [ "$?" = "0" ]; then
 
     . "$OS_INFO"
 
-    echo "$ID_LIKE" | sed 's/.*\(debian|fedora\).*/\1/'
+    OS_TYPE="$(echo "$ID_LIKE" | sed 's/.*\(debian|fedora\).*/\1/')"
+
+    if [ "$OS_TYPE" = "" ]; then
+      echo "$ID_LIKE"
+      exit 1
+    else
+      echo "$OS_TYPE"
+    fi
   )
+
+  if ! [ "$?" = "0" ]; then
+    echo "Error: couldn't identify os: $OS_TYPE"
+    exit 1
+  fi
 
   case "$OS_TYPE" in
     debian)
@@ -25,8 +36,6 @@ if ! [ "$?" = "0" ]; then
       ;;
     fedora)
       sudo dnf -y install stow
-      ;;
-    *)
       ;;
   esac
 fi
