@@ -20,3 +20,5 @@ _darcs
 ^/COPYING
 
 .+\.log
+
+stow.sh
