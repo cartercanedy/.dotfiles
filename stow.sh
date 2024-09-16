@@ -1,6 +1,6 @@
-__=$(which stow)
+#!/bin/sh -e
 
-if ! [ "$?" = "0" ]; then
+if which stow -s; then
   OS_TYPE=$(
     OS_INFO=""
 
