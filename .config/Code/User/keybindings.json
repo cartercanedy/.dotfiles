@@ -72,5 +72,17 @@
     "key": "tab",
     "command": "workbench.action.focusLastEditorGroup",
     "when": "inputBoxFocus"
+  },
+  {
+    "key": "enter",
+    "command": "-acceptSelectedSuggestion"
+  },
+  {
+    "key": "] d",
+    "command": "editor.action.marker.next"
+  },
+  {
+    "key": "[ d",
+    "command": "editor.action.marker.prev"
   }
 ]
