@@ -1,0 +1,76 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-vscode-neovim.send",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal.p && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "ctrl-y",
+    "command": "acceptSelectedSuggestion",
+    "when": "editorTextFocus && suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "workbench.action.acceptSelectedQuickOpenItem",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl-y",
+    "command": "list.select",
+    "when": "inQuickInput && listFocus"
+  },
+  {
+    "key": "ctrl-n",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus && !suggestWidgetVisible && neovim.init && neovim.mode == 'insert'"
+  },
+  {
+    "key": "ctrl-p",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus && !suggestWidgetVisible && neovim.init && neovim.mode == 'insert'"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "-workbench.action.files.newUntitledFile",
+  },
+  {
+    "key": "space f d",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space f d",
+    "command": "workbench.action.closeActiveEditor",
+    "when": "!editorTextFocus && !filesExplorerFocus && !searchViewletFocus && !terminalFocus && neovim.mode != 'cmdline' && !inputBoxFocus && !inputFocus"
+  },
+  {
+    "key": "space f n",
+    "command": "workbench.action.nextEditor",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space f p",
+    "command": "workbench.action.previousEditor",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'normal'"
+  },
+  {
+    "key": "space p s",
+    "command": "search.action.openEditor",
+    "when": "!(editorTextFocus && neovim.init && neovim.mode == 'insert') && !inputBoxFocus"
+  },
+  {
+    "key": "space p f",
+    "command": "filesExplorer.findInWorkspace",
+    "when": "!(editorTextFocus && neovim.init && neovim.mode == 'insert') && !inputBoxFocus"
+  },
+  {
+    "key": "tab",
+    "command": "workbench.action.focusLastEditorGroup",
+    "when": "inputBoxFocus"
+  }
+]

@@ -1,0 +1,204 @@
+{
+  "editor.tabSize": 2,
+  "editor.fontFamily": "Cascadia Mono Light",
+  "css.format.braceStyle": "expand",
+  "omnisharp.enableDecompilationSupport": true,
+  "omnisharp.enableLspDriver": true,
+  "omnisharp.enableRoslynAnalyzers": true,
+  "dotnet.defaultSolution": "disable",
+  "dotnetAcquisitionExtension.enableTelemetry": false,
+  "security.workspace.trust.untrustedFiles": "open",
+  "editor.fontSize": 18,
+  "telemetry.telemetryLevel": "crash",
+  "debug.openDebug": "openOnDebugBreak",
+  "editor.tabCompletion": "off",
+  "powershell.integratedConsole.focusConsoleOnExecute": true,
+  "files.defaultLanguage": "",
+  "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+  "powershell.buttons.showPanelMovementButtons": false,
+  "powershell.codeFolding.showLastLine": true,
+  "powershell.analyzeOpenDocumentsOnly": true,
+  "powershell.cwd": "C:\\Users\\canedca1\\source\\repos",
+  "powershell.debugging.createTemporaryIntegratedConsole": true,
+  "terminal.integrated.enableMultiLinePasteWarning": "auto",
+  "explorer.confirmDelete": false,
+  "git.confirmSync": false,
+  "git.autofetch": true,
+  "remote.SSH.remotePlatform": {
+    "192.168.0.15": "linux",
+    "192.168.0.3": "linux",
+    "192.168.0.10": "linux",
+    "192.168.0.1": "windows",
+    "10.222.34.253": "windows",
+    "10.222.33.207": "windows",
+    "NRUSCA-WDL33681": "windows",
+    "192.168.0.60": "linux"
+  },
+  "omnisharp.enableAsyncCompletion": true,
+  "terminal.integrated.defaultProfile.windows": "pwsh",
+  "terminal.integrated.profiles.windows": {
+    "pwsh": {
+      "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+      "icon": "terminal-powershell",
+      "overrideName": true
+    },
+    "Command Prompt": {
+      "path": [
+        "${env:windir}\\Sysnative\\cmd.exe",
+        "${env:windir}\\System32\\cmd.exe"
+      ],
+      "args": [],
+      "icon": "terminal-cmd"
+    },
+    "Git Bash": {
+      "source": "Git Bash"
+    },
+    "Conda PowerShell": {
+      "path": "${env:programfiles}\\PowerShell\\7\\pwsh.exe",
+      "args": [
+        "-ExecutionPolicy",
+        "ByPass",
+        "-NoExit",
+        "-Command",
+        "& 'C:\\Users\\canedca1\\AppData\\Local\\miniconda3\\shell\\condabin\\conda-hook.ps1' ; conda activate 'C:\\Users\\canedca1\\AppData\\Local\\miniconda3'"
+      ],
+      "icon": "terminal-powershell",
+      "overrideName": true
+    }
+  },
+  "editor.autoIndent": "advanced",
+  "editor.detectIndentation": false,
+  "powershell.promptToUpdatePowerShell": false,
+  "git.enableSmartCommit": true,
+  "git.path": "C:\\Users\\canedca1\\AppData\\Local\\Programs\\Git\\cmd\\git.exe",
+  "python.terminal.activateEnvironment": false,
+  "editor.inlayHints.enabled": "off",
+  "terminal.integrated.fontSize": 18,
+  "redhat.telemetry.enabled": false,
+  "jupyter.askForKernelRestart": false,
+  "notebook.lineNumbers": "on",
+  "dotnet.codeLens.enableReferencesCodeLens": false,
+  "explorer.confirmDragAndDrop": false,
+  "python.analysis.typeCheckingMode": "basic",
+  "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
+  "extensions.experimental.affinity": {
+    "asvetliakov.vscode-neovim": 1
+  },
+  "vscode-neovim.ctrlKeysForNormalMode": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "o",
+    "r",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "/",
+    "]",
+    "right",
+    "left",
+    "up",
+    "down",
+    "backspace",
+    "delete",
+    "q"
+  ],
+  "workbench.colorCustomizations": {
+    "editor.background": "#202020",
+    "editor.lineHighlightBackground": "#252525"
+  },
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": "storage",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": "keyword.control",
+        "settings": {
+          "fontStyle": "italic"
+        }
+      }
+    ]
+  },
+  "editor.rulers": [
+    {
+      "column": 80,
+      "color": "#777"
+    }
+  ],
+  "cmake.showOptionsMovedNotification": false,
+  "mssql.connections": [
+    {
+      "server": "localhost",
+      "database": "testing",
+      "authenticationType": "Integrated",
+      "profileName": "testing",
+      "encrypt": "Mandatory",
+      "trustServerCertificate": true,
+      "user": "",
+      "password": "",
+      "connectTimeout": 15,
+      "commandTimeout": 30,
+      "applicationName": "vscode-mssql"
+    }
+  ],
+  "mssql.objectExplorer.groupBySchema": false,
+  "vscode-edge-devtools.webhintInstallNotification": true,
+  "csharp.experimental.debug.hotReload": true,
+  "security.allowedUNCHosts": [
+    "nibr.novartis.net",
+    "wsl.localhost"
+  ],
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.lineNumbers": "relative",
+  "editor.cursorSurroundingLines": 8,
+  "rust-analyzer.inlayHints.typeHints.enable": false,
+  "rust-analyzer.completion.fullFunctionSignatures.enable": true,
+  "rust-analyzer.semanticHighlighting.operator.specialization.enable": true,
+  "rust-analyzer.semanticHighlighting.punctuation.separate.macro.bang": true,
+  "rust-analyzer.typing.autoClosingAngleBrackets.enable": true,
+  "rust-analyzer.lens.references.adt.enable": true,
+  "rust-analyzer.lens.references.enumVariant.enable": true,
+  "rust-analyzer.lens.references.method.enable": true,
+  "rust-analyzer.lens.references.trait.enable": true,
+  "rust-analyzer.debug.openDebugPane": true,
+  "rust-analyzer.hover.actions.references.enable": true,
+  "debug.allowBreakpointsEverywhere": true,
+  "rust-analyzer.interpret.tests": true,
+  "rust-analyzer.testExplorer": true,
+  "hexeditor.columnWidth": 16,
+  "hexeditor.showDecodedText": true,
+  "hexeditor.defaultEndianness": "little",
+  "hexeditor.inspectorType": "aside",
+  "remote.SSH.useExecServer": false,
+  "files.associations": {
+    "*.content": "html"
+  },
+  "editor.renderWhitespace": "trailing",
+  "files.trimTrailingWhitespace": true,
+  "terminal.integrated.gpuAcceleration": "on",
+  "diffEditor.ignoreTrimWhitespace": true,
+  "http.proxySupport": "fallback",
+  "lldb.showDisassembly": "never",
+  "rust-analyzer.debug.engine": "ms-vscode.cpptools",
+  "lldb.suppressUpdateNotifications": true,
+  "editor.autoClosingBrackets": "languageDefined",
+  "editor.autoClosingQuotes": "languageDefined",
+  "editor.autoClosingDelete": "always",
+  "editor.autoClosingOvertype": "always"
+}
