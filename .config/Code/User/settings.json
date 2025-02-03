@@ -77,7 +77,6 @@
   "redhat.telemetry.enabled": false,
   "jupyter.askForKernelRestart": false,
   "notebook.lineNumbers": "on",
-  "dotnet.codeLens.enableReferencesCodeLens": false,
   "explorer.confirmDragAndDrop": false,
   "python.analysis.typeCheckingMode": "basic",
   "vscode-neovim.neovimExecutablePaths.win32": "C:\\Program Files\\Neovim\\bin\\nvim.exe",
@@ -187,7 +186,8 @@
   "hexeditor.inspectorType": "aside",
   "remote.SSH.useExecServer": false,
   "files.associations": {
-    "*.content": "html"
+    "*.content": "html",
+    "*.bas": "vb"
   },
   "editor.renderWhitespace": "trailing",
   "files.trimTrailingWhitespace": true,
@@ -200,5 +200,14 @@
   "editor.autoClosingBrackets": "languageDefined",
   "editor.autoClosingQuotes": "languageDefined",
   "editor.autoClosingDelete": "always",
-  "editor.autoClosingOvertype": "always"
+  "editor.autoClosingOvertype": "always",
+  "editor.largeFileOptimizations": false,
+  "dotnet.preferVisualStudioCodeFileSystemWatcher": true,
+  "dotnet.backgroundAnalysis.analyzerDiagnosticsScope": "fullSolution",
+  "dotnet.backgroundAnalysis.compilerDiagnosticsScope": "fullSolution",
+  "editor.inlineSuggest.enabled": false,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "[csharp]": {
+    "files.encoding": "utf8"
+  }
 }

@@ -20,6 +20,16 @@
     "when": "editorTextFocus && neovim.mode == 'insert'"
   },
   {
+    "key": "ctrl+y",
+    "command": "acceptSelectedCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "list.select",
+    "when": "fix"
+  },
+  {
     "key": "ctrl+n",
     "command": "editor.action.triggerSuggest",
     "when": "editorTextFocus && neovim.mode == 'insert' && !suggestWidgetVisible"
@@ -47,4 +57,54 @@
     "key": "enter",
     "command": "-acceptSelectedSuggestion"
   },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'normal'"
+  },
+  {
+    "key": "shift+k",
+    "command": "-editor.action.showHover",
+    "when": "editorHoverVisible && editorTextFocus && neovim.init && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "-redo"
+  },
+  {
+    "key": "tab",
+    "command": "-insertSnippet",
+    "when": "editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && !inSnippetMode"
+  },
+  {
+    "key": "tab",
+    "command": "-insertNextSuggestion",
+    "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+  },
+  {
+    "key": "tab",
+    "command": "-insertBestCompletion",
+    "when": "atEndOfWord && textInputFocus && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "ctrl+w ctrl+t",
+    "command": "terminal.focus",
+  },
+  {
+    "key": "ctrl+w t",
+    "command": "terminal.focus",
+  },
+  {
+    "key": "ctrl+w ctrl+e",
+    "command": "workbench.action.focusActiveEditorGroup",
+  },
+  {
+    "key": "ctrl+w e",
+    "command": "workbench.action.focusActiveEditorGroup",
+  }
 ]
