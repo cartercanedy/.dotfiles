@@ -65,8 +65,6 @@
       "overrideName": true
     }
   },
-  "editor.autoIndent": "advanced",
-  "editor.detectIndentation": false,
   "powershell.promptToUpdatePowerShell": false,
   "git.enableSmartCommit": true,
   "git.path": "C:\\Users\\canedca1\\AppData\\Local\\Programs\\Git\\cmd\\git.exe",
@@ -178,7 +176,7 @@
   "debug.allowBreakpointsEverywhere": true,
   "rust-analyzer.interpret.tests": true,
   "rust-analyzer.testExplorer": true,
-  "hexeditor.columnWidth": 16,
+  "hexeditor.columnWidth": 32,
   "hexeditor.showDecodedText": true,
   "hexeditor.defaultEndianness": "little",
   "hexeditor.inspectorType": "aside",
@@ -224,8 +222,12 @@
   "git.blame.editorDecoration.enabled": false,
   "editor.accessibilitySupport": "off",
   "diffEditor.hideUnchangedRegions.enabled": true,
-  "terminal.integrated.fontFamily": "Cascadia Mono Light",
-  "editor.fontFamily": "Cascadia Mono Light",
+  "terminal.integrated.fontFamily": "Cascadia Mono NF Light",
+  "editor.fontFamily": "Cascadia Mono NF Light",
+  "editor.fontLigatures": false,
   "terminal.integrated.fontLigatures.featureSettings": "\"calt\" off",
   "C_Cpp.intelliSenseEngine": "disabled",
+  "editor.detectIndentation": false,
+  "vscode-neovim.neovimExecutablePaths.linux": "/home/canedca1/.local/bin/nvim",
+  "python.createEnvironment.trigger": "off",
 }
