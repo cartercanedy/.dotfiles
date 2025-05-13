@@ -1,9 +1,9 @@
-font-family = "Cascadia Mono NF"
-font-style = "SemiLight"
-font-size = "20"
+font-family = "Cascadia Mono NF Light"
+font-size = "18"
 theme = "OneHalfDark"
 cursor-style = "block"
 cursor-style-blink = false
 shell-integration = "none"
+confirm-close-surface = false
 
 keybind = ctrl+backspace=text:\x17
