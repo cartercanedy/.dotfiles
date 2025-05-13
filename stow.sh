@@ -1,6 +1,6 @@
 #!/bin/sh -e
 
-if ! which stow -s > /dev/null 2>&1; then
+if ! command -v stow 2>&1 > /dev/null; then
   OS_INFO=""
 
   if [ -f "/etc/os-release" ]; then
