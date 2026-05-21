@@ -15,7 +15,6 @@
     "powershell.buttons.showPanelMovementButtons": false,
     "powershell.codeFolding.showLastLine": true,
     "powershell.analyzeOpenDocumentsOnly": true,
-    "powershell.cwd": "C:\\Users\\canedca1\\source\\repos",
     "powershell.debugging.createTemporaryIntegratedConsole": true,
     "terminal.integrated.enableMultiLinePasteWarning": "auto",
     "remote.SSH.remotePlatform": {
