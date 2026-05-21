@@ -1,0 +1,36 @@
+source /usr/share/git/completion/git-prompt.sh
+
+GREEN='\033[32m'
+RED='\033[31m'
+DARK_RED='\033[38;5;214m'
+NO_COLOR='\033[00m'
+BLUE='\033[34m'
+
+PS1=$'\u2554'"[${debian_chroot:+($debian_chroot)}$GREEN\u$NO_COLOR@$RED\h$NO_COLOR] "$'\u276f'" $BLUE\w$NO_COLOR \$(__git_ps1 '($DARK_RED%s$NO_COLOR)')\\n"$'\u255a'" \\$ "
+NOCONDA_PS1="$PS1"
+
+__fmt_conda_prompt() {
+  if [ $CONDA_SHLVL ] && [ "$CONDA_SHLVL" != "0" ]; then
+    PS1="(${CONDA_DEFAULT_ENV})\n${NOCONDA_PS1}"
+  else
+    PS1="$NOCONDA_PS1"
+  fi
+}
+
+PROMPT_COMMAND=__fmt_conda_prompt
+
+alias ll="ls -alHh"
+alias ll="ls -aHh"
+set -o vi
+
+export DOTNET_ROOT="$HOME/.dotnet"
+export PATH="$PATH:$DOTNET_ROOT"
+
+alias repos="cd $HOME/source/repos"
+
+
+# Add your own exports, aliases, and functions here.
+#
+# Make an alias for invoking commands you use constantly
+# alias p='python'
+. "$HOME/.cargo/env"
