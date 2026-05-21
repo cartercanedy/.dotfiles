@@ -1,0 +1,305 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+  {
+    "key": "ctrl+p",
+    "command": "-workbench.action.quickOpen"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "-vscode-neovim.send",
+    "when": "editorTextFocus && neovim.ctrlKeysNormal.p && neovim.init && neovim.mode != 'insert' && editorLangId not in 'neovim.editorLangIdExclusions'"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "workbench.action.acceptSelectedQuickOpenItem",
+    "when": "inQuickOpen"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "acceptSelectedSuggestion",
+    "when": "editorTextFocus && neovim.mode == 'insert'"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "acceptSelectedCodeAction",
+    "when": "codeActionMenuVisible"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "list.select",
+    "when": "fix"
+  },
+  {
+    "key": "ctrl+n",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus && neovim.mode == 'insert' && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl+p",
+    "command": "editor.action.triggerSuggest",
+    "when": "editorTextFocus && neovim.mode == 'insert' && !suggestWidgetVisible"
+  },
+  {
+    "key": "ctrl-y",
+    "command": "list.select",
+    "when": "inQuickInput && listFocus"
+  },
+  {
+    "key": "ctrl-n",
+    "command": "-workbench.action.files.newUntitledFile",
+  },
+  {
+    "key": "enter",
+    "command": "-acceptSelectedSuggestion"
+  },
+  {
+    "key": "ctrl+y",
+    "command": "-redo"
+  },
+  {
+    "key": "tab",
+    "command": "-insertSnippet",
+    "when": "editorTextFocus && hasSnippetCompletions && !editorTabMovesFocus && !inSnippetMode"
+  },
+  {
+    "key": "tab",
+    "command": "-insertNextSuggestion",
+    "when": "hasOtherSuggestions && textInputFocus && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+  },
+  {
+    "key": "tab",
+    "command": "-insertBestCompletion",
+    "when": "atEndOfWord && textInputFocus && !hasOtherSuggestions && !inSnippetMode && !suggestWidgetVisible && config.editor.tabCompletion == 'on'"
+  },
+  {
+    "key": "tab",
+    "command": "-acceptSelectedSuggestion",
+    "when": "suggestWidgetHasFocusedSuggestion && suggestWidgetVisible && textInputFocus"
+  },
+  {
+    "key": "tab",
+    "command": "editor.action.inlineSuggest.commit",
+    "when": "inlineSuggestionVisible && textInputFocus && !suggestWidgetVisible && !inSnippetMode"
+  },
+  {
+    "key": "ctrl+w ctrl+q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+w q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "ctrl+w ctrl+t",
+    "command": "terminal.focus",
+  },
+  {
+    "key": "ctrl+w t",
+    "command": "terminal.focus",
+  },
+  {
+    "key": "ctrl+w ctrl+n",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+w n",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+w ctrl+p",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "ctrl+w p",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "ctrl+w ctrl+w",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+w w",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "ctrl+w ctrl+f",
+    "command": "workbench.action.toggleEditorWidths"
+  },
+  {
+    "key": "ctrl+w f",
+    "command": "workbench.action.toggleEditorWidths"
+  },
+  {
+    "key": "ctrl+w ctrl+e",
+    "command": "workbench.action.focusActiveEditorGroup",
+  },
+  {
+    "key": "ctrl+w e",
+    "command": "workbench.action.focusActiveEditorGroup",
+  },
+  {
+    "key": "ctrl+w 1",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "ctrl+w 2",
+    "command": "workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "ctrl+w s r",
+    "command": "workbench.action.splitEditorRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+w s l",
+    "command": "workbench.action.splitEditorLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+w s u",
+    "command": "workbench.action.splitEditorUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+w s d",
+    "command": "workbench.action.splitEditorDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+w cmd+q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "cmd+w q",
+    "command": "workbench.action.closeActiveEditor"
+  },
+  {
+    "key": "cmd+w cmd+t",
+    "command": "terminal.focus",
+  },
+  {
+    "key": "cmd+w t",
+    "command": "terminal.focus",
+  },
+  {
+    "key": "cmd+w cmd+n",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "cmd+w n",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "cmd+w cmd+p",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "cmd+w p",
+    "command": "workbench.action.focusPreviousGroup"
+  },
+  {
+    "key": "cmd+w cmd+w",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "cmd+w w",
+    "command": "workbench.action.focusNextGroup"
+  },
+  {
+    "key": "cmd+w cmd+f",
+    "command": "workbench.action.toggleEditorWidths"
+  },
+  {
+    "key": "cmd+w f",
+    "command": "workbench.action.toggleEditorWidths"
+  },
+  {
+    "key": "cmd+w cmd+e",
+    "command": "workbench.action.focusActiveEditorGroup",
+  },
+  {
+    "key": "cmd+w e",
+    "command": "workbench.action.focusActiveEditorGroup",
+  },
+  {
+    "key": "cmd+w 1",
+    "command": "workbench.action.focusFirstEditorGroup"
+  },
+  {
+    "key": "cmd+w 2",
+    "command": "workbench.action.focusSecondEditorGroup"
+  },
+  {
+    "key": "cmd+w s r",
+    "command": "workbench.action.splitEditorRight",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+w s l",
+    "command": "workbench.action.splitEditorLeft",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+w s u",
+    "command": "workbench.action.splitEditorUp",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "cmd+w s d",
+    "command": "workbench.action.splitEditorDown",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+up",
+    "command": "-workbench.action.terminal.scrollToPreviousCommand",
+    "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-workbench.action.terminal.focus",
+    "when": "accessibilityModeEnabled && accessibleViewOnLastLine && terminalHasBeenCreated && accessibleViewCurrentProviderId == 'terminal' || accessibilityModeEnabled && accessibleViewOnLastLine && terminalProcessSupported && accessibleViewCurrentProviderId == 'terminal'"
+  },
+  {
+    "key": "ctrl+down",
+    "command": "-workbench.action.terminal.scrollToNextCommand",
+    "when": "terminalFocus && terminalHasBeenCreated && !accessibilityModeEnabled || terminalFocus && terminalProcessSupported && !accessibilityModeEnabled"
+  },
+  {
+    "key": "shift+k",
+    "command": "editor.action.showHover",
+    "when": "editorTextFocus && neovim.init && neovim.mode == 'normal'"
+  },
+  {
+    "key": "shift+k",
+    "command": "-editor.action.showHover",
+    "when": "editorHoverVisible && editorTextFocus && neovim.init && neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+alt+i",
+    "command": "-workbench.action.chat.open",
+    "when": "!chatSetupDisabled && !chatSetupHidden"
+  },
+  {
+    "key": "ctrl+l",
+    "command": "aichat.newchataction",
+    "when": "neovim.mode == 'normal'"
+  },
+  {
+    "key": "ctrl+.",
+    "command": "editor.action.quickFix"
+  },
+  {
+    "key": "ctrl+shift+p",
+    "command": "workbench.action.showCommands"
+  },
+  {
+    "key": "ctrl+backspace",
+    "command": "deleteWordLeft",
+    "when": "(editorTextFocus && neovim.mode == 'insert')"
+  },
+  {
+    "key": "alt-\\",
+    "command": "editor.action.inlineSuggest.trigger",
+    "when": "editorTextFocus && (neovim.mode == 'insert' || neovim.mode == 'normal')"
+  }
+]
